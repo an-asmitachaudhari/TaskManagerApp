@@ -5,12 +5,12 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('../pages/pages.module').then((m) => m.PagesModule),
+      import('./pages/pages.module').then((m) => m.PagesModule),
   },
   {
     path: 'shared',
     loadChildren: () =>
-      import('../shared/shared.module').then((m) => m.SharedModule),
+      import('./shared/shared.module').then((m) => m.SharedModule),
   },
 ];
 

@@ -1,0 +1,77 @@
+<div class="container">
+  <div class="bottomright">
+    <button
+      type="button"
+      class="button position-absolute bottom-0 end-0"
+      (click)="openModal(template)"
+      style="float: right"
+    >
+      <i class="fa fa-plus"></i> +
+    </button>
+  </div>
+</div>
+
+<ng-template #template>
+  <div class="modal-header">
+    <h2 class="modal-title pull-left">Task Name</h2>
+    <!--<button
+        (click)="modalRef.hide()"
+        type="btn btn-primary"
+        class="close"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">x</span>
+      </button>-->
+  </div>
+
+  <div class="modal-body">
+    <div class="mb-3">
+      <div class="form-group">
+        <label>Set Date</label>
+        <input type="text" class="form-control" bsDatepicker />
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <div class="form-group">
+        <label>Add Reminder</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>No Reminder</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-check-label" for="flexCheckDefault">
+        Mark as Urgent
+      </label>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <div class="form-group">
+        <label>Add Note..</label>
+        <input type="text" class="form-control" formControlName="addnote" />
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button
+          class="btn btn-primary"
+          type="submit"
+          routerLink="/tasks-list-single"
+        >
+          ADD TASK
+        </button>
+      </div>
+    </div>
+  </div>
+</ng-template>
