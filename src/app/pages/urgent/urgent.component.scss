@@ -1,0 +1,22 @@
+.bg {
+  background-color: rgb(179, 170, 170);
+}
+
+.container {
+  padding: 0;
+}
+
+.test:after {
+  content: "\2807";
+  width: 200px;
+  height: 200px;
+  font-size: x-large;
+}
+
+.form-check-input {
+  font-size: large;
+}
+
+.form-check-label {
+  font-size: large;
+}

@@ -1,0 +1,100 @@
+.navbar {
+  background-color: "rgba(132, 0, 255, 0.87)";
+}
+
+.sidebar-nav ul li a {
+  font-size: 26px;
+  text-decoration: none;
+  display: block;
+  padding: 6px 10px;
+  transition: 0.5s;
+}
+.sidebar-nav ul li a:hover {
+  background-color: #eeeeee;
+  border-radius: 4px;
+}
+.sidebar-nav .offcanvas {
+  width: 220px;
+  border: none;
+}
+.sidebar-nav .offcanvas ul li a span {
+  font-size: 18px;
+  position: relative;
+  top: -4px;
+  transition: 0.5s;
+}
+.sidebar-nav .offcanvas.show ul li a:hover span {
+  padding-left: 10px;
+}
+.sidebar-nav .dropdown-toggle::after {
+  position: relative;
+  top: 3px;
+}
+.bi::before,
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+  margin-right: 5px;
+}
+
+.img-fluid {
+  max-width: 200px;
+  height: 200px;
+}
+
+.navbar {
+  background: rgb(95, 47, 226);
+}
+/*.button {
+  background-color: #e23111;
+  border: none;
+  color: rgb(252, 252, 252);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  margin: 4px 2px;
+}*/
+
+/*.btn {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid rgb(247, 1, 1);
+}*/
+
+.btn-default {
+  font-family: Raleway-SemiBold;
+  font-size: 13px;
+  color: rgba(248, 4, 4, 0.75);
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: 2px solid rgb(241, 12, 12);
+  border-radius: 40px;
+  background: rgb(241, 12, 12);
+  transition: all 0.3s ease 0s;
+}
+
+.btn-default:hover {
+  color: rgb(255, 0, 0);
+  background: rgb(241, 12, 12);
+  border: 2px solid rgb(241, 12, 12);
+}
+
+.button {
+  border-radius: 3cm;
+  background-color: rgb(255, 0, 0);
+}
+
+h2 {
+  color: rgb(131, 12, 241);
+}
+
+h5 {
+  font-weight: bold;
+}
+
+.form-check-label {
+  color: rgb(131, 12, 241);
+}
